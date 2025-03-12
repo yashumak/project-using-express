@@ -1,0 +1,40 @@
+<% include ./partials/header.ejs %>
+
+<body class="bg-gray-100 flex items-center justify-center min-h-screen">
+    <div class="bg-white w-full max-w-sm p-8 rounded-3xl shadow-xl text-center">
+        <!-- Logo -->
+        <img src="https://i.pinimg.com/originals/d3/d1/75/d3d175e560ae133f1ed5cd4ec173751a.png" alt="Pinterest Logo"
+            class="w-16 mx-auto">
+
+        <!-- Title -->
+        <h2 class="text-2xl font-bold mt-4 text-gray-800">Log in to see more</h2>
+
+        <!-- Login Form -->
+        <form action="/login" method="POST" class="mt-6 space-y-3">
+            <input type="text" name="username" placeholder="Username"
+                class="w-full p-3 border border-gray-300 rounded-3xl focus:ring-2 focus:ring-red-400 outline-none transition">
+
+            <input type="password" name="password" placeholder="Password"
+                class="w-full p-3 border border-gray-300 rounded-3xl focus:ring-2 focus:ring-red-400 outline-none transition">
+
+            <button type="submit"
+                class="w-full bg-red-600 text-white py-3 rounded-3xl mt-2 font-bold text-lg hover:bg-red-700 transition">
+                Log in
+            </button>
+        </form>
+
+        <!-- Terms & Privacy -->
+        <p class="text-xs text-gray-500 mt-4">
+            By continuing, you agree to Pinterest's <b>Terms of Service, Privacy Policy.</b>
+        </p>
+
+        <hr class="my-4 border-gray-300">
+
+        <!-- Sign-up Link -->
+        <p class="text-sm">Not on Pinterest yet?
+            <a href="/register" class="text-red-600 font-bold hover:underline">Sign up</a>
+        </p>
+    </div>
+</body>
+
+<% include ./partials/footer.ejs %>
