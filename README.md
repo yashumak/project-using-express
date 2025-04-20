@@ -47,14 +47,18 @@ Pinterest/
     git clone https://github.com/yashumak/project-using-express.git
    ```
 
-2. Navigate to the `Pinterest` folder.
-3. Install dependencies:
+2. Navigate to the folder.
+   ````bash
+   cd <Folder>
+   ````
+  
+4. Install dependencies:
 
    ```bash
    npm install
    ```
 
-4. Start server
+5. Start server
 
    ```bash
     npm start
@@ -119,7 +123,3 @@ Arrange_File/
 
 - LinkedIn: [@yash-umak](https://www.linkedin.com/in/yash-umak-5242ab320/)
 - GitHub: [@yashumak](https://github.com/yashumak)
-
-### 🪪License
-
-This project is licensed under the MIT License.
